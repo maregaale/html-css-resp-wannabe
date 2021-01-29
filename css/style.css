@@ -94,4 +94,32 @@ img {
   }
 }
 /* /media query larghezza 992px */
+
+/* /media query larghezza 420px */
+@media screen and (max-width: 420px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .row .left, .row .right, .row .central {
+    padding: 10px 15px 25px 15px;
+  }
+
+  .left img, .right img, .central img {
+    width: 40%;
+    height: 40%;
+  }
+
+  #lezioni .row>.left, #lezioni .row>.right {
+    display: block;
+    width: 100%;
+  }
+
+  #steps .row>.left, #steps .row>.central, #steps .row>.right {
+    width: 100%;
+  }
+
+}
+/* /media query larghezza 420px */
+
 /* /responsive */
