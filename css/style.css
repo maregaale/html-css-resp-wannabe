@@ -145,6 +145,10 @@ img {
     width: 40%;
     height: 40%;
   }
+
+  #steps .central, #lezioni .right {
+    border: 0;
+  }
 }
 /* /media query larghezza 420px */
 
