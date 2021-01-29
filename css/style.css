@@ -74,5 +74,11 @@ img {
 
 
 /* responsive */
-
+/* media query larghezza 992px */
+@media screen and (max-width: 992px) {
+  .row {
+    max-width: 95%;
+  }
+}
+/* /media query larghezza 992px */
 /* /responsive */
