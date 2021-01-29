@@ -76,8 +76,21 @@ img {
 /* responsive */
 /* media query larghezza 992px */
 @media screen and (max-width: 992px) {
+  * {
+    box-sizing: border-box;
+  }
+
   .row {
     max-width: 95%;
+  }
+
+  #lezioni .row {
+    margin-top: 70px;
+  }
+
+  .row> *:not(h1) {
+    font-size: 18px;
+    padding: 0 15px;
   }
 }
 /* /media query larghezza 992px */
