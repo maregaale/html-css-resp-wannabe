@@ -121,7 +121,67 @@ img {
 }
 /* /media query larghezza 992px */
 
-/* /media query larghezza 420px */
+/* media query larghezza 768px */
+@media screen and (max-width: 768px) {
+  #lezioni .row>.left, #lezioni .row>.right {
+    display: block;
+    float: left;
+    /* width: calc(50%); */
+  }
+
+  #steps .row>.left, #steps .row>.central, #steps .row>.right {
+    width: calc(50% - 4px);
+    display: inline-block;
+    float: none;
+    border: 0;
+    padding: 0 25px;
+    margin-top: 40px;
+    vertical-align: top;
+  }
+
+  #steps .row>.left::after, #steps .row>.central::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #why .row img {
+    width: 150px;
+    height: 150px;
+    padding: 5%;
+  }
+}
+/* /media query larghezza 768px */
+
+/* media query larghezza 524px */
+@media screen and (max-width: 524px) {
+  #lezioni .row>.left, #lezioni .row>.right {
+    display: block;
+    width: 100%;
+    border: 0;
+  }
+
+  #steps .row .right {
+    padding: 10px 0 25px 0;
+  }
+
+  #why .row img {
+    width: 120px;
+    height: 120px;
+    padding: 5%;
+  }
+}
+/* /media query larghezza 524px */
+
+
+/* media query larghezza 420px */
 @media screen and (max-width: 420px) {
   * {
     box-sizing: border-box;
@@ -132,21 +192,12 @@ img {
   }
 
 
-  #lezioni .row>.left, #lezioni .row>.right {
-    display: block;
-    width: 100%;
-  }
 
   #steps .row>.left, #steps .row>.central, #steps .row>.right {
     width: 100%;
   }
 
-  .left img, .right img, .central img {
-    width: 40%;
-    height: 40%;
-  }
-
-  #steps .central, #lezioni .right {
+    #steps .central, #lezioni .right {
     border: 0;
   }
 }
